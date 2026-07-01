@@ -1,6 +1,6 @@
 # Async Race
 
-**Deployed UI:** [https://async-race-app.vercel.app](https://async-race-app.vercel.app)
+**Deployed UI:** [[https://async-race-app.vercel.app](https://async-race-app.vercel.app)](https://async-raceeee.vercel.app/)
 
 **Estimated Score:** 300 / 400
 
