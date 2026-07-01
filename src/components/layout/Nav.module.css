@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+  gap: 8px;
+}
+
+.link,
+.active {
+  padding: 8px 20px;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color var(--transition-fast);
+}
+
+.link {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.link:hover {
+  background-color: var(--color-accent-light);
+}
+
+.active {
+  background-color: var(--color-primary);
+  color: white;
+}

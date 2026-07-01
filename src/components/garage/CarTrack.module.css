@@ -1,0 +1,70 @@
+.carTrack {
+  margin-bottom: 8px;
+  padding: 8px;
+  background-color: var(--color-surface);
+  border-radius: var(--border-radius);
+}
+
+.controls {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.carName {
+  font-size: 0.85rem;
+  color: var(--color-text);
+  margin-left: 4px;
+  font-weight: 500;
+}
+
+.track {
+  position: relative;
+  height: 50px;
+  background: var(--color-track);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.carWrapper {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  flex-shrink: 0;
+}
+
+.finishLine {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: repeating-linear-gradient(
+    180deg,
+    var(--color-finish) 0px,
+    var(--color-finish) 5px,
+    #333 5px,
+    #333 10px
+  );
+}
+
+@media (max-width: 500px) {
+  .controls {
+    gap: 4px;
+  }
+
+  .carName {
+    font-size: 0.75rem;
+    flex-basis: 100%;
+    order: -1;
+    margin-left: 0;
+  }
+
+  .track {
+    height: 40px;
+  }
+}

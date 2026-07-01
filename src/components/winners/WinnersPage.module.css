@@ -1,0 +1,11 @@
+.heading {
+  font-size: 1.2rem;
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+
+.empty {
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: 40px 0;
+}

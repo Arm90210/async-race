@@ -1,0 +1,61 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  animation: fadeIn 0.3s ease;
+}
+
+.banner {
+  background: var(--color-surface);
+  border: 2px solid var(--color-finish);
+  border-radius: 12px;
+  padding: 32px 48px;
+  text-align: center;
+  animation: scaleIn 0.3s ease;
+}
+
+.title {
+  color: var(--color-finish);
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.name {
+  font-size: 1.3rem;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.time {
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+
+.close {
+  padding: 8px 32px;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.close:hover {
+  background: var(--color-primary-hover);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
